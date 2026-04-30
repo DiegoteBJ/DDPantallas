@@ -48,6 +48,7 @@
             columnHeader3 = new ColumnHeader();
             label7 = new Label();
             CantidadText = new TextBox();
+            QuitarBoton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -114,13 +115,14 @@
             // 
             // AgregarBoton
             // 
-            AgregarBoton.Location = new Point(374, 254);
+            AgregarBoton.Location = new Point(376, 489);
             AgregarBoton.Margin = new Padding(3, 2, 3, 2);
             AgregarBoton.Name = "AgregarBoton";
             AgregarBoton.Size = new Size(82, 45);
             AgregarBoton.TabIndex = 6;
             AgregarBoton.Text = "Agregar";
             AgregarBoton.UseVisualStyleBackColor = true;
+            AgregarBoton.Click += AgregarBoton_Click;
             // 
             // AprobarBoton
             // 
@@ -224,11 +226,23 @@
             CantidadText.Size = new Size(188, 23);
             CantidadText.TabIndex = 12;
             // 
+            // QuitarBoton
+            // 
+            QuitarBoton.Location = new Point(288, 489);
+            QuitarBoton.Margin = new Padding(3, 2, 3, 2);
+            QuitarBoton.Name = "QuitarBoton";
+            QuitarBoton.Size = new Size(82, 45);
+            QuitarBoton.TabIndex = 13;
+            QuitarBoton.Text = "Quitar";
+            QuitarBoton.UseVisualStyleBackColor = true;
+            QuitarBoton.Click += QuitarBoton_Click;
+            // 
             // PedidoMaterialesOficinaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(481, 732);
+            Controls.Add(QuitarBoton);
             Controls.Add(CantidadText);
             Controls.Add(label7);
             Controls.Add(MaterialesListView);
@@ -249,6 +263,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "PedidoMaterialesOficinaForm";
             Text = "Pedido de Materiales Oficina";
+            Load += PedidoMaterialesOficinaForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -276,5 +291,6 @@
         private ColumnHeader columnHeader3;
         private Label label7;
         private TextBox CantidadText;
+        private Button QuitarBoton;
     }
 }
