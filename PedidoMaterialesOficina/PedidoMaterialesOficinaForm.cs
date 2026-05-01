@@ -78,5 +78,20 @@ namespace DDPantallas.PedidoMaterialesOficina
             var materialId = (int)itemSeleccionado.Tag;
             modelo.Deseleccionar(materialId);
         }
+
+        private void MaterialesListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprimeNroPedidoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
